@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" id="name" onkeyup="validateName()">
+                <span id="Name_error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Email Id</label>
+                <input type="email" placeholder="Enter Email" id="email" onkeyup="validateEmail()">
+                <span id="Email_error"></span>
+            </div>   
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="(123)-456-7890" id="phone" onkeyup="validatePhone()">
+                <span id="Phone_error"></span>
+            </div>
+
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
