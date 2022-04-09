@@ -7,11 +7,12 @@
     <title>Form</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script type="text/javacript" src="main2.js"></script>
     
 </head>
 <body>
     <div class="container">
-        <form>
+        <form action="Thanku.html" method="get">
             <div class="input-group">
                 <label>Full Name</label>
                 <input type="text" placeholder="Enter your name" id="name" onkeyup="validateName()">
@@ -30,7 +31,9 @@
                 <span id="Phone_error"></span>
             </div>
 
-            <button>Submit</button>
+            
+                <button onclick="handlesubmit()">Submit</button>
+            
         </form>
     </div>
     <script src="main.js"></script>
